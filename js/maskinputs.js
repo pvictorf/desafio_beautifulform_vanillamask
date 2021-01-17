@@ -42,10 +42,10 @@ function handleMaskName(event) {
          return word.charAt(0).toUpperCase().trim() + word.slice(1);
       }
       return word.trim();
-      
+
    });
    
-   let newName = correct.join(' ').replace(/[0-9]/g, '');
+   let newName = correct.join(' ').replace(/[0-9]/g, '').replace(/\s\s+/g, ' ');
    event.target.value = newName;
    return newName;
 }
