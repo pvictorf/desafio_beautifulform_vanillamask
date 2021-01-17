@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#000000" />
+  <title>Formulário com VMask</title>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;600;700;800&display=swap" rel="stylesheet">
+  <link href="./assets/css/style.css" rel="stylesheet">
+</head>
+<body>
+  <!-- Contact -->
+  <section class="contact-section">
+    <article class="contact">
+      <div class="contact-banner fade-in">
+        <img src="https://i.imgur.com/nKRmRuo.jpeg" alt="Banner" />
+      </div>
+      <div class="contact-form fade-in">
+        <form action="?" method="POST">
+          <div class="contact-form-head">
+            <h1>VanillaMask Exemplo</h1>
+            <p>By @pvictorf</p>
+            <h2>Crie sua conta</h2>
+          </div>
+          <div class="contact-form-fields">
+            <div class="form-fields">
+              <input type="text" name="name" placeholder="Nome" data-mask-name />
+              <input type="text" name="phone" placeholder="Telefone" data-mask-phone inputmode="numeric" />
+              <input type="document" name="document" placeholder="CPF ou CNPJ" data-mask-document inputmode="numeric"/>
+            </div>
+          </div>
+          <div class="contact-form-footer">
+            <button type="button" class="form-button-white" name="btn-login" id="btn-login">
+              Enviar
+            </button>
+          </div>
+        </form>
+      </div>
+    </article>
+  </section>
+  <!-- scripts -->
+  <script src="./assets/js/vanilla-masker.min.js"></script>
+  <script src="./assets/js/maskinputs.js"></script>
+
+</body>
+</html>
