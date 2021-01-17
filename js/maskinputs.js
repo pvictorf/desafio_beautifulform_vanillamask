@@ -45,7 +45,7 @@ function handleMaskName(event) {
 
    });
    
-   let newName = correct.join(' ').replace(/[0-9]/g, '').replace(/\s\s+/g, ' ');
+   let newName = correct.join(' ').replace(/[0-9]/g, '').replace(/\s\s+/g, '');
    event.target.value = newName;
    return newName;
 }
