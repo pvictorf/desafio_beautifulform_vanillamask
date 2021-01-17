@@ -1,5 +1,5 @@
 # beautifulform_vanillamask
-Exemplo de formulário utilizando puro javascript, VanillaMask e correção de nome.
+Exemplo de formulário utilizando puro javascript, com auxílio da biblioteca VanillaMask.
 
 # Features
 - Correção de nome da pessoa automático.
