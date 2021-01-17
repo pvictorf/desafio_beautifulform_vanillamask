@@ -33,15 +33,16 @@ function handlerMask(pattern, max, event) {
 function handleMaskName(event) {
    let correct = event.target.value.toLowerCase().split(" ").map(function (word) {
      
-     const isNotPreposition = function(word) {
-       const prepositions = ['da', 'de', 'do', 'dos'];
-       return ( prepositions.indexOf(word) === -1 && word.length > 1 );
-     }; 
+      const isNotPreposition = function(word) {
+         const prepositions = ['da', 'de', 'do', 'dos'];
+         return ( prepositions.indexOf(word) === -1 && word.length > 1 );
+      }; 
 
-     if(isNotPreposition(word)) {
+      if(isNotPreposition(word)) {
          return word.charAt(0).toUpperCase().trim() + word.slice(1);
       }
       return word.trim();
+      
    });
    
    let newName = correct.join(' ').replace(/[0-9]/g, '');
