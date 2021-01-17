@@ -7,6 +7,8 @@ Exemplo de formulário utilizando puro javascript, com auxílio da biblioteca Va
 - Mascara para CPF e CPNJ.
 - CSS utilizando variaveis e práticas. 
 
+![](example.png)
+
 # Demo
 Veja no codepen: https://codepen.io/victorferreira/pen/YzGyLVb
 
