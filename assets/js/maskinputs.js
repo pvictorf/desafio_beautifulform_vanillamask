@@ -31,16 +31,19 @@ function handlerMask(pattern, max, event) {
 
 
 function handleMaskName(event) {
-    let correct = event.target.value.toLowerCase().split(" ").map(function (word) {
-        let d = ['da', 'de', 'do', 'dos'];
+   const d = ['da', 'de', 'do', 'dos'];
+   const correct = event.target.value.toLowerCase().split(" ").map(function (chars) {
+        const word = chars.trim();
 
         if (d.indexOf(word) === -1 && word.length > 1) {
             return word.charAt(0).toUpperCase().trim() + word.slice(1);
         }
-        return word.trim();
+        return word;
     });
+
+    const removeWhiteSpaces = (str) => str.replace(/\s{2,}/g, ' ');
+    const name = removeWhiteSpaces(correct.join(' '));
     
-    let name = correct.join(' ');
     event.target.value = name;
     return name;
 }
