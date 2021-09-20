@@ -89,8 +89,8 @@ CONTACT SECTION
 
 .contact-banner > img {
    width: 100%;
-   max-width: 484px;
-   object-fit: none;
+   max-width: 500px;
+   object-fit: cover;
    margin-right: 20px;
 }
 
@@ -180,6 +180,21 @@ CONTACT SECTION
  .fade-in {
 	-webkit-animation: fade-in 2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
 	        animation: fade-in 2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+@media screen and (max-width: 768px) {
+   .contact {
+      padding: 1rem;
+      flex-direction: column;
+   }
+   .contact-banner {
+      display: none;
+   }
+   .contact-form {
+      padding: 2.1rem 1rem;
+      margin: 0 auto;
+      max-width: 350px;
+   }
 }
 
  @-webkit-keyframes fade-in {
